@@ -89,9 +89,11 @@ a:hover {
     color: var(--white);
     border: 1px solid var(--main-color);
 }
-.btn-outline a{
+
+.btn-outline a {
     color: var(--white);
 }
+
 .btn {
     font-size: var(--fs-6);
     font-weight: var(--fw-700);
@@ -104,13 +106,16 @@ a:hover {
     -ms-transition: var(--transition);
     -o-transition: var(--transition);
 }
+
 .btn-outline:is(:hover, :focus) {
     box-shadow: rgba(92, 80, 220, 0.5) 0px 3px 10px;
     background: var(--main-color);
 }
+
 .btn:is(:hover, :focus) {
     transform: translateY(-2px);
 }
+
 /* end component */
 /* start up button and whats app btn */
 .up-btn,
@@ -667,8 +672,36 @@ footer .logo img {
     padding-block: var(--section-padding);
 }
 
+.about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+}
+
+.about .main-title h2 {
+    color: var(--second-color);
+}
+
 .about-content {
     margin-bottom: 30px;
+}
+
+.about .content {
+    display: flex;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .about .container {
+        gap: 20px;
+    }
+
+    .about .content {
+        flex-direction: column;
+    }
+
 }
 
 .about-icon {
@@ -769,8 +802,6 @@ footer .logo img {
 @media (min-width: 992px) {
     .about .container {
         display: flex;
-        align-items: center;
-        gap: 50px;
     }
 
     .about-content {
@@ -803,6 +834,36 @@ footer .logo img {
 }
 
 /* end features  */
+/* start gallary  */
+.projects {
+    padding: var(--section-padding) 0;
+}
+.projects .main-title h2 {
+    color: var(--second-color);
+}
+
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px !important;
+    height: 300px !important;
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+/* end gallary  */
 /* start keyframes  */
 
 @keyframes type-animation {

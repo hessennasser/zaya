@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
     <script src="https://kit.fontawesome.com/d633f21f4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -50,7 +52,7 @@
                     <a href="#our-advantages" class="nav-link">مميزاتنا</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">أعمالنا</a>
+                    <a href="#projects" class="nav-link">أعمالنا</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">تواصل معنا</a>
@@ -119,78 +121,151 @@
     <!-- start features  -->
     <section class="about" id="our-advantages" dir="rtl">
         <div class="container">
-            <div class="about-content">
-                <div class="about-icon">
-                    <lord-icon src="https://cdn.lordicon.com/mdgrhyca.json" trigger="loop" delay="2000"
-                        colors="primary:#ffffff,secondary:#501c6f" style="width:100%;">
-                    </lord-icon>
-                </div>
-                <h2 class="h2 about-title">مميزات زايا الرقمية</h2>
-                <p class="about-text">
-                    <!-- Nam libero tempore cum soluta as nobis est eligendi optio cumque nihile impedite quo minus id quod
-                    maxime. -->
-                </p>
-                <button class="btn btn-outline"><a href="https://zaya.digital/" target="_blank"
-                        rel="noopener noreferrer">المتجر</a></button>
+            <div class="main-title">
+                <h2>من نحن؟</h2>
             </div>
-            <ul class="about-list">
-                <li>
-                    <div class="about-card">
-                        <div class="card-icon">
-                            <lord-icon src="https://cdn.lordicon.com/nobciafz.json" trigger="loop" delay="2000"
-                                colors="primary:#ffffff,secondary:#501c6f" style="width:100%;">
-                            </lord-icon>
-                        </div>
-                        <h3 class="h3 card-title">فريق احترافي ومتمكن
-                        </h3>
-                        <p class="card-text">
-                            لدينا فريق من افضل المختصين في مجال التجارة الالكترونية.
-                        </p>
+            <div class="content">
+                <div class="about-content">
+                    <div class="about-icon">
+                        <lord-icon src="https://cdn.lordicon.com/mdgrhyca.json" trigger="loop" delay="2000"
+                            colors="primary:#ffffff,secondary:#501c6f" style="width:100%;">
+                        </lord-icon>
                     </div>
-                </li>
-                <li>
-                    <div class="about-card">
-                        <div class="card-icon">
-                            <lord-icon src="https://cdn.lordicon.com/kbtmbyzy.json" trigger="loop" delay="2000"
-                                colors="primary:#ffffff,secondary:#501c6f" style="width:100%;">
-                            </lord-icon>
+                    <h2 class="h2 about-title">مميزات زايا الرقمية</h2>
+                    <p class="about-text">
+                        <!-- Nam libero tempore cum soluta as nobis est eligendi optio cumque nihile impedite quo minus id quod
+                        maxime. -->
+                    </p>
+                    <button class="btn btn-outline"><a href="https://zaya.digital/" target="_blank"
+                            rel="noopener noreferrer">المتجر</a></button>
+                </div>
+                <ul class="about-list">
+                    <li>
+                        <div class="about-card">
+                            <div class="card-icon">
+                                <lord-icon src="https://cdn.lordicon.com/nobciafz.json" trigger="loop" delay="2000"
+                                    colors="primary:#ffffff,secondary:#501c6f" style="width:100%;">
+                                </lord-icon>
+                            </div>
+                            <h3 class="h3 card-title">فريق احترافي ومتمكن
+                            </h3>
+                            <p class="card-text">
+                                لدينا فريق من افضل المختصين في مجال التجارة الالكترونية.
+                            </p>
                         </div>
-                        <h3 class="h3 card-title">سرعة في الاستلام والتسليم</h3>
-                        <p class="card-text">
-                            جميع خدماتنا رقمية بضغطة زر تحصل على الخدمة.
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="about-card">
-                        <div class="card-icon">
-                            <lord-icon src="https://cdn.lordicon.com/zpxybbhl.json" trigger="loop" delay="2000"
-                                colors="primary:#ffffff,secondary:#501c6f" style="width:100%;">
-                            </lord-icon>
+                    </li>
+                    <li>
+                        <div class="about-card">
+                            <div class="card-icon">
+                                <lord-icon src="https://cdn.lordicon.com/kbtmbyzy.json" trigger="loop" delay="2000"
+                                    colors="primary:#ffffff,secondary:#501c6f" style="width:100%;">
+                                </lord-icon>
+                            </div>
+                            <h3 class="h3 card-title">سرعة في الاستلام والتسليم</h3>
+                            <p class="card-text">
+                                جميع خدماتنا رقمية بضغطة زر تحصل على الخدمة.
+                            </p>
                         </div>
-                        <h3 class="h3 card-title">خدمة ما بعد البيع مجاناً</h3>
-                        <p class="card-text">
-                            .اي سؤال بعد الخدمة جاهزين , وهذا اللي يميزنا
-                        </p>
-                    </div>
-                </li>
-                <li>
-                    <div class="about-card">
-                        <div class="card-icon">
-                            <lord-icon src="https://cdn.lordicon.com/qrbokoyz.json" trigger="loop" delay="2000"
-                                colors="primary:#ffffff,secondary:#501c6f" style="width:100%;">
-                            </lord-icon>
+                    </li>
+                    <li>
+                        <div class="about-card">
+                            <div class="card-icon">
+                                <lord-icon src="https://cdn.lordicon.com/zpxybbhl.json" trigger="loop" delay="2000"
+                                    colors="primary:#ffffff,secondary:#501c6f" style="width:100%;">
+                                </lord-icon>
+                            </div>
+                            <h3 class="h3 card-title">خدمة ما بعد البيع مجاناً</h3>
+                            <p class="card-text">
+                                .اي سؤال بعد الخدمة جاهزين , وهذا اللي يميزنا
+                            </p>
                         </div>
-                        <h3 class="h3 card-title">جودة تنافسيه</h3>
-                        <p class="card-text">
-                            يتم تنفيذ المطلوب علي اكمل وجه وباعلي جوده.
-                        </p>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                    <li>
+                        <div class="about-card">
+                            <div class="card-icon">
+                                <lord-icon src="https://cdn.lordicon.com/qrbokoyz.json" trigger="loop" delay="2000"
+                                    colors="primary:#ffffff,secondary:#501c6f" style="width:100%;">
+                                </lord-icon>
+                            </div>
+                            <h3 class="h3 card-title">جودة تنافسيه</h3>
+                            <p class="card-text">
+                                يتم تنفيذ المطلوب علي اكمل وجه وباعلي جوده.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     <!-- end features  -->
+    <!-- start gallary  -->
+    <div class="projects" id="projects" dir="rtl">
+        <div class="container">
+            <div class="main-title">
+                <h2>أعمالنا</h2>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img id="myImg" src="imgs/sliders/moodwise Store 1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img id="myImg" src="imgs/sliders/Nbs للتجارة والتسويق.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img id="myImg" src="imgs/sliders/NoriMart 1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img id="myImg" src="imgs/sliders/NoriMart 2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img id="myImg" src="imgs/sliders/Post 1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img id="myImg" src="imgs/sliders/Post 2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img  id="myImg"src="imgs/sliders/Story 1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img id="myImg" src="imgs/sliders/اعلان 1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img id="myImg" src="imgs/sliders/اعلان 2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img id="myImg" src="imgs/sliders/بنر 1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img id="myImg" src="imgs/sliders/بنر 2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img id="myImg" src="imgs/sliders/بيت الالعاب.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img id="myImg" src="imgs/sliders/سوار USB.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img id="myImg" src="imgs/sliders/متجر tmez 1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img id="myImg" src="imgs/sliders/متجر tmez 2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img id="myImg" src="imgs/sliders/متجر tmez 3.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img id="myImg" src="imgs/sliders/متجر ناين 1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img id="myImg" src="imgs/sliders/متجر ناين 2.png" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end gallary  -->
     <!-- start footer  -->
     <footer dir="rtl">
         <div class="footer-top">
