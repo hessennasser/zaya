@@ -35,6 +35,7 @@ window.addEventListener('scroll', function () {
 });
 // end btn-up
 
+// start swiper 
 var swiper = new Swiper(".mySwiper", {
     loop: true,
     effect: "coverflow",
