@@ -269,6 +269,9 @@ header {
     left: 0;
     height: 84px;
     z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header .container {
@@ -283,7 +286,7 @@ header .logo {
 }
 
 header .logo img {
-    width: 54px;
+    width: 120px;
 }
 
 header .nav {
@@ -940,7 +943,7 @@ footer .logo {
 }
 
 footer .logo img {
-    width: 60px;
+    width: 120px;
 }
 
 .footer-text {
